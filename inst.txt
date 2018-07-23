@@ -1,0 +1,5 @@
+#!/bin/sh
+sudo su
+yum update -y
+echo "Downloading File from bucket"
+aws s3 cp s3://pe-96/lambo.jpg /home/ec2-user
